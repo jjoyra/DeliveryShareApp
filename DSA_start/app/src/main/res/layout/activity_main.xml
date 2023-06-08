@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/testBtn"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="test"
+        style="@style/btnFontStyle"></Button>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="@string/common_start"
+        style="@style/btnFontStyle"></Button>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="47dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="이미 계정이 있나요?"
+            style="@style/miniFontStyle"></TextView>
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_login"
+            style="@style/miniFontStyle"
+            android:textColor="#9BE170"></TextView>
+
+    </LinearLayout>
+</LinearLayout>

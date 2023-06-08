@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DSA_start</string>
+    <string name="common_start">시작하기</string>
+    <string name="common_login">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="findId">아이디 찾기</string>
+    <string name="findPassword">비밀번호 찾기</string>
+    <string name="id">아이디</string>
+    <string name="password">비밀번호</string>
+    <string name="phone">휴대전화</string>
+    <string name="email">이메일</string>
+    <string name="getEmail">인증 메일 받기</string>
+    <string name="idCheck">중복확인</string>
+    <string name="name">이름</string>
+    <string name="nickname">닉네임</string>
+    <string name="gender">성별</string>
+    <string name="woman">여성</string>
+    <string name="man">남성</string>
+    <string name="finish">완료</string>
+    <string name="findAddress">현재 위치로 찾기</string>
+    <string name="setAddress">주소 설정</string>
+    <string name="setTown">내 동네 설정</string>
+    <string name="writePost">매칭 글 작성하기</string>
+
+</resources>

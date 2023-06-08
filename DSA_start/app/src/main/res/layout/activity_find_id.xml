@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FindIdActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/findIdTb"
+        android:background="@color/white"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/findId"
+            style="@style/boldFontStyle"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/idPhoneEt"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/phone"
+        android:paddingLeft="20dp"
+        android:inputType=""
+        style="@style/editFontStyle"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/idEmailEt"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:layout_marginBottom="46dp"
+        android:hint="@string/email"
+        android:paddingLeft="20dp"
+        android:inputType=""
+        style="@style/editFontStyle"
+        ></EditText>
+
+    <Button
+        android:id="@+id/findIdBtn"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="@string/findId"
+        style="@style/btnFontStyle"></Button>
+
+</LinearLayout>

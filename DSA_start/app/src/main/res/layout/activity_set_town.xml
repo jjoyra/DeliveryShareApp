@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetTown">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/townTb"
+        android:background="@color/white"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/setAddress"
+            style="@style/boldFontStyle"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="6dp"
+        android:text="동네 선택"
+        android:textColor="#3A3A3A"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="34dp"
+        android:text="지역은 최소 1개 이상 최대 2개까지 설정 가능해요"
+       style="@style/miniFontStyle"></TextView>
+
+    <RadioGroup
+        android:id="@+id/townRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/townRb1"
+            android:layout_width="148dp"
+            android:layout_height="47dp"
+            android:background="@drawable/town_selector"
+            android:textColor="@drawable/town_selector_text"
+            android:paddingLeft="15dp"
+            android:text="test"
+            android:button="@null"
+            android:textStyle="bold"
+            android:textSize="17dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/townRb2"
+            android:layout_width="148dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/town_selector"
+            android:button="@null"
+            android:paddingLeft="15dp"
+            android:text="test"
+            android:textColor="@drawable/town_selector_text"
+            android:textStyle="bold"
+            android:textSize="17dp"></RadioButton>
+
+    </RadioGroup>
+
+
+</LinearLayout>

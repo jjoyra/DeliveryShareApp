@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/signUpTb"
+        android:background="@color/white"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sign_up"
+            style="@style/boldFontStyle"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="21dp"
+                android:text="@string/id"
+                style="@style/boldFontStyle"></TextView>
+
+            <EditText
+                android:id="@+id/signUpIdEt"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="13dp"
+                android:hint="8 ~ 15자 사이로 입력해주세요"
+                android:paddingLeft="20dp"
+                android:inputType=""
+                style="@style/editFontStyle"
+                ></EditText>
+
+            <Button
+                android:id="@+id/idChkBtn"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:background="@drawable/small_button"
+                android:text="@string/idCheck"
+                android:layout_marginLeft="239dp"
+                android:layout_marginBottom="14dp"
+                style="@style/sBtnFontStyle"></Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:text="@string/password"
+                style="@style/boldFontStyle"></TextView>
+
+            <EditText
+                android:id="@+id/signUpPwEt"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="13dp"
+                android:hint="15자 이하로 입력해주세요"
+                android:paddingLeft="20dp"
+                android:inputType=""
+                style="@style/editFontStyle"
+                ></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="21dp"
+                android:text="@string/name"
+                style="@style/boldFontStyle"></TextView>
+
+            <EditText
+                android:id="@+id/signUpNameEt"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="13dp"
+                android:paddingLeft="20dp"
+                android:inputType=""
+                style="@style/editFontStyle"
+                ></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="21dp"
+                android:text="@string/nickname"
+                style="@style/boldFontStyle"></TextView>
+
+            <EditText
+                android:id="@+id/signUpNNameEt"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="13dp"
+                android:paddingLeft="20dp"
+                android:inputType=""
+                style="@style/editFontStyle"
+                ></EditText>
+
+            <Button
+                android:id="@+id/nNameChkBtn"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:background="@drawable/small_button"
+                android:text="@string/idCheck"
+                android:layout_marginLeft="239dp"
+                android:layout_marginBottom="14dp"
+                style="@style/sBtnFontStyle"></Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:text="@string/phone"
+                style="@style/boldFontStyle"></TextView>
+
+            <EditText
+                android:id="@+id/signUpPhoneEt"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="13dp"
+                android:paddingLeft="20dp"
+                android:inputType=""
+                style="@style/editFontStyle"
+                ></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="21dp"
+                android:text="@string/email"
+                style="@style/boldFontStyle"></TextView>
+
+            <EditText
+                android:id="@+id/signUpEmailEt"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="13dp"
+                android:paddingLeft="20dp"
+                android:inputType=""
+                style="@style/editFontStyle"
+                ></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="21dp"
+                android:text="@string/gender"
+                style="@style/boldFontStyle"></TextView>
+
+            <RadioGroup
+                android:id="@+id/genderRG"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="46dp">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/wRb"
+                    android:layout_width="161dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/l_gender_selector"
+                    android:textColor="@drawable/gender_selector_text"
+                    android:gravity="center"
+                    android:text="@string/woman"
+                    android:button="@null"
+                    style="@style/sBtnFontStyle"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/mRb"
+                    android:layout_width="161dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/r_gender_selector"
+                    android:textColor="@drawable/gender_selector_text"
+                    android:gravity="center"
+                    android:text="@string/man"
+                    android:button="@null"
+                    style="@style/sBtnFontStyle"></RadioButton>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/finishBtn"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="46dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:text="@string/finish"
+                style="@style/btnFontStyle"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
